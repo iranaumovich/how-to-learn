@@ -1,4 +1,10 @@
-* {
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
   margin: 0;
   padding: 0;
 }
@@ -69,6 +75,7 @@
 
 .header__main-illustration {
   display: inline-block;
+  object-fit: cover;
   width: 765px;
   height: 608px;
   position: absolute;
@@ -97,22 +104,20 @@
 .two-columns {
   display: flex;
   width: 80%;
+  justify-content: space-between;
 }
 
 .two-columns__brief {
-  min-width: 175px;
+  width: 175px;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
   color: #2f80ed;
-  width: 20%;
 }
 
 .two-columns__main-text {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  min-height: 150px;
   width: 80%;
   min-width: 784px;
 }
@@ -171,18 +176,28 @@
 
 .table__cell {
   width: 250px;
+  list-style-type: none;
 }
 
 .table__heading {
-  margin-bottom: 20px;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
 }
 
 .table__text {
-  margin-bottom: 20px;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: 20px;
+}
+
+.table__text:last-child {
+  margin-bottom: 0;
 }
 
 .feynman {
-  height: 890px;
+  min-height: 890px;
   background-color: #f2f2f2;
   background-image: url("../images/feynman.png");
   background-size: 867px 637px;
@@ -197,7 +212,8 @@
   font-size: 120px;
   font-weight: 600;
   text-align: center;
-  margin: 100px auto 0;
+  padding: 100px;
+  margin: auto;
 }
 
 .feynman__subtitle {
@@ -230,6 +246,7 @@
 }
 
 .table_theme_dark {
+  row-gap: 80px;
   padding-top: 80px;
 }
 
@@ -238,6 +255,10 @@
 }
 
 .kaufman__triangle {
+  background-image: url("../images/kaufman-triangle.svg");
+  background-size: 877px 877px;
+  background-position: left bottom;
+  background-repeat: no-repeat;
   height: 877px;
   width: 877px;
   position: absolute;
@@ -247,6 +268,9 @@
 }
 
 .footer {
+  box-sizing: border-box;
+  min-height: 350px;
+  display: flex;
   background-color: #1f1f1f;
   color: white;
   padding-top: 60px;
@@ -257,8 +281,9 @@
   display: flex;
   justify-content: space-between;
   width: 90%;
-  min-height: 350px;
   margin: auto;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .footer__column_content_copyright {
@@ -275,7 +300,7 @@
   background-repeat: no-repeat;
 }
 
-.footer__auyhor {
+.footer__author {
   padding-top: 18px;
   padding-bottom: 18px;
   line-height: 25px;
@@ -304,24 +329,28 @@
   font-weight: normal;
 }
 
-.footer__column_content_social .footer__column-link::before {
-  content: '';
-  width: 16px;
-  height: 16px;
-  display: inline-block;
-  padding-right: 10px;
-  background-repeat: no-repeat;
-  background-size: contain;
+.footer__column-link_social {
+  padding-left: 26px;
 }
 
-.footer__column_content_social .footer__column-link:nth-child(1)::before {
+.footer__column-link_type_youtube {
   background-image: url('../images/youtube-icon.svg');
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  background-position: 0 center;
+
 }
 
-.footer__column_content_social .footer__column-link:nth-child(2)::before {
+.footer__column-link_type_vk {
   background-image: url('../images/vk_color_white.svg');
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  background-position: 0 center;
 }
 
-.footer__column_content_social .footer__column-link:nth-child(3)::before {
-  background-image: url('../images/tiktok-icon.svg');
+.footer__column-link_type_tiktok {
+  background-image: url('../images/youtube-icon.svg');
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  background-position: 0 center;
 }
