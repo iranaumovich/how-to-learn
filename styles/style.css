@@ -1,14 +1,3 @@
-body,
-h1,
-h2,
-h3,
-p,
-ul,
-li {
-  margin: 0;
-  padding: 0;
-}
-
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -53,6 +42,8 @@ li {
 }
 
 .header__subtitle {
+  margin: 0;
+  padding: 0;
   width: 388px;
   position: absolute;
   left: 64px;
@@ -108,6 +99,8 @@ li {
 }
 
 .two-columns__brief {
+  margin: 0;
+  padding: 0;
   width: 175px;
   line-height: 1.2;
   font-size: 18px;
@@ -123,6 +116,8 @@ li {
 }
 
 .two-columns__paragraph {
+  margin: 0;
+  padding: 0;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
@@ -164,6 +159,8 @@ li {
 }
 
 .table {
+  margin: 0;
+  padding: 0;
   display: flex;
   width: 1100px;
   flex-wrap: wrap;
@@ -180,12 +177,16 @@ li {
 }
 
 .table__heading {
+  margin: 0;
+  padding: 0;
   line-height: 1.15;
   font-size: 24px;
   font-weight: 600;
 }
 
 .table__text {
+  margin: 0;
+  padding: 0;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
@@ -212,7 +213,7 @@ li {
   font-size: 120px;
   font-weight: 600;
   text-align: center;
-  padding: 100px;
+  padding-top: 100px;
   margin: auto;
 }
 
@@ -301,6 +302,8 @@ li {
 }
 
 .footer__author {
+  margin: 0;
+  padding: 0;
   padding-top: 18px;
   padding-bottom: 18px;
   line-height: 25px;
@@ -309,6 +312,8 @@ li {
 }
 
 .footer__column-heading {
+  margin: 0;
+  padding: 0;
   line-height: 30px;
   font-size: 18px;
   font-weight: 600;
@@ -329,16 +334,12 @@ li {
   font-weight: normal;
 }
 
-.footer__column-link_social {
-  padding-left: 26px;
-}
-
 .footer__column-link_type_youtube {
   background-image: url('../images/youtube-icon.svg');
   background-size: 16px 16px;
   background-repeat: no-repeat;
   background-position: 0 center;
-
+  padding-left: 26px;
 }
 
 .footer__column-link_type_vk {
@@ -346,6 +347,7 @@ li {
   background-size: 16px 16px;
   background-repeat: no-repeat;
   background-position: 0 center;
+  padding-left: 26px;
 }
 
 .footer__column-link_type_tiktok {
@@ -353,4 +355,5 @@ li {
   background-size: 16px 16px;
   background-repeat: no-repeat;
   background-position: 0 center;
+  padding-left: 26px;
 }
