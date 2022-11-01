@@ -34,7 +34,7 @@
 .header__title {
   width: 730px;
   align-self: center;
-  margin-left: 64px;
+  margin: 0 0 0 64px;
   line-height: 96px;
   font-size: 102px;
   font-weight: 600;
@@ -220,6 +220,7 @@
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
+  margin-bottom: 0;
   margin-top: 70px;
   text-align: center;
 }
