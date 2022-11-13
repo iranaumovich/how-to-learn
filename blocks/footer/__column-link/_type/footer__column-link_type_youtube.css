@@ -1,0 +1,7 @@
+.footer__column-link_type_youtube {
+  background-image: url('../../../../images/youtube-icon.svg');
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  padding-left: 26px;
+}
