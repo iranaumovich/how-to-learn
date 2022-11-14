@@ -1,7 +1,7 @@
-.half-transparent {
+.link {
   transition: opacity 0.2s ease;
 }
 
-.half-transparent:hover {
+.link:hover {
   opacity: 0.5;
 }
